@@ -1,0 +1,18 @@
+---
+title: Team page
+---
+<h2 class="text-center">Our team</h2>
+<ul class="list-inline text-center">
+  <% ["anne", "seb", "romain"].each do |member| %>
+  <li>
+    <h3><%= member.capitalize %></h3>
+    <%= image_tag "#{member}.jpg", class: "avatar-large" %>
+  </li>
+  <% end %>
+</ul>
+
+<% link_to "index.html", class: "text-center" do %>
+
+<h2 class="padded"><i class="fa fa-envelope"></i>
+  contact@airbnb.com</h2>
+  <% end %>
